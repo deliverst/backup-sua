@@ -8,9 +8,9 @@ const date = new Date().toLocaleString().split(' ')[0].replace(/\//g, '_').repla
 
 if (process.env.OS === 'Windows_NT') {
     // windows
-    var pathOriginal = `/SUA.MDB`
-    var pathDestination = `/backupFile_${date}.MDB`
-
+    var pathOriginal = `C:\\Cobranza\\SUA\\SUA.MDB`
+    var pathDestination = `C:\\SW\\backupSUA\\backupFile_${date}.MDB`
+    
 } else {
     // macOS testing
     var pathOriginal = `/Users/deliverst/Desktop/SUA.MDB`
