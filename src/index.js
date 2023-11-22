@@ -9,7 +9,7 @@ console.log(process.env.OS)
 if (process.env.OS === 'Windows_NT') {
     // windows
     var pathOriginal = `C:\\Cobranza\\SUA\\SUA.MDB`
-    var pathDestination = `C:\\SW\\scripts\\backup-sua\\backups\\${year}_${month}_${day}.MDB` //create folder backups automatically
+    var pathDestination = `C:\\SW\\scripts\\backup-sua\\backups\\${year}_${month}_${day}.MDB` //todo: create folder backups automatically
     
 } else {
     // macOS testing
@@ -26,5 +26,5 @@ fs.copyFile(pathOriginal, pathDestination, async (e) => {
     }
 })
 
-// command to add schedule task:
+// command to add schedule task on windows:
 // schtasks /create /tn "backupSUA" /tr "\"C:\Program Files\nodejs\node.exe\"\"C:\SW\scripts\backup-sua\src\index.js\"" /sc daily /st 07:00:00
