@@ -1,4 +1,8 @@
 # Logs
+.DS_Store
+node_modules
+.env
+*.MDB
 env
 logs
 *.log

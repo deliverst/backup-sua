@@ -13,7 +13,7 @@ async function sendMail() {
     let mailOptions = {
         from: process.env.MAILGMAIL,
         to: process.env.MAILDESTINATION,
-        subject: 'Notification SUA Backup',
+        subject: '🔴 Notification SUA Backup',
         text: 'Something went wrong when trying to back up SUA database',
     }
 
@@ -27,3 +27,5 @@ async function sendMail() {
 }
 
 module.exports = sendMail
+
+
