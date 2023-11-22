@@ -19,7 +19,7 @@ if (process.env.OS === 'Windows_NT') {
 
 fs.copyFile(pathOriginal, pathDestination, async (e) => {
     if (e) {
-        // await sendMail()
+        await sendMail()
     } else {
         // await sendMail()
         console.log(`the file was copied in ${pathDestination}`)
